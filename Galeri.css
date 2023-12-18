@@ -1,0 +1,28 @@
+
+body {
+    background-color: #d9d2d2;
+
+    color: #f7f6f4;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.header img {
+    width: 60px;
+    height: 60px;
+}
+
+.galeri-decoration {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 15px;
+    color: #fbfbfa;
+
+}
