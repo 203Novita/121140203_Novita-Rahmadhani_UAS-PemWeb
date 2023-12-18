@@ -27,6 +27,7 @@ a. form submission handling
 proses penanganan yang terjadi ketika pengguna mengisi formulir dan menekan tombol submit yang memiliki nama 'submit'. Pada saat peristiwa ini terjadi, metode bernama `addData` dari objek `$classhandle` dipanggil. langkah-langkahnya setelah pengguna mengisi formulir dan menekan tombol submit, event ini memicu pemanggilan metode `addData` pada objek `$classhandle`. Metode ini kemudian melakukan proses penambahan data ke dalam database sesuai dengan informasi yang telah dimasukkan oleh pengguna melalui formulir.
 
 b. form deletion handling
+
 ![5](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/40088ccb-4c8d-4d88-b0e5-7fad6e56561f)
 
 proses penanganan yang terjadi ketika pengguna mengisi formulir dan menekan tombol submit yang memiliki nama 'hapus'. Pada saat peristiwa ini terjadi, sebuah event di sisi server akan memicu pemanggilan metode removeData dari objek $classhandle.Dengan kata lain, langkah-langkahnya adalah saat pengguna mengklik tombol submit pada formulir dengan nama 'hapus', event ini memicu pemanggilan metode removeData pada objek $classhandle. Metode ini kemudian bertanggung jawab untuk menghapus data yang terkait dengan formulir tersebut dari database.
@@ -43,6 +44,7 @@ Dalam bagian ini, proses pemrosesan data dari formulir dilaksanakan di sisi serv
 2. Buatlah sebuah objek PHP berbasis OOP yang memiliki minimal dua metode dan gunakan objek tersebut dalam skenario tertentu pada halaman web Anda.
 
 Jawab :
+
 ![7](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/07d852e7-ea28-4cee-99a6-88df7bccfa3d)
 
 Dalam bagian ini, terdapat definisi kelas Classhandle yang mencakup metode addData dan removeData. Kedua metode ini dirancang untuk menambahkan dan menghapus data dari database secara berurutan. Dalam implementasinya, metode addData bertanggung jawab untuk memproses penambahan data ke dalam database, sementara metode removeData ditujukan untuk menghapus data yang telah ada. Kode yang disediakan mencerminkan pendekatan berbasis objek dalam pemrosesan data pada sisi server menggunakan PHP. Pendekatan ini memanfaatkan konsep pemrograman berorientasi objek, yang memungkinkan kelolaan yang lebih baik dan pengelolaan fungsi-fungsi terkait data dalam satu entitas kelas, yaitu Classhandle. Dengan adanya kelas dan metodenya, pengelolaan data menjadi lebih terstruktur dan modular, memfasilitasi pemeliharaan dan pengembangan aplikasi web secara efisien.
@@ -68,6 +70,7 @@ Bagian 4: State Management
 1.Buatlah skrip PHP yang menggunakan session untuk menyimpan dan mengelola state pengguna. Implementasikan logika yang memanfaatkan session.
 
 Jawab :
+
 ![11](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/0599dc8c-5af8-4718-9aea-e606747adf3d)
 
 Dalam potongan kode tersebut, manajemen sesi dalam PHP diimplementasikan untuk mengelola proses login dan logout pengguna. Fungsi `session_start()` digunakan untuk memulai atau melanjutkan sesi, yang penting dalam menyimpan informasi pengguna secara konsisten di seluruh aplikasi. Ketika pengguna berhasil login melalui `$classhandle->validateUser`, informasi pengguna seperti nama pengguna disimpan dalam variabel sesi `$_SESSION['user']`. Ini memungkinkan identifikasi pengguna selama sesi berlangsung tanpa perlu mengandalkan data yang dikirim kembali dari pengguna. Selain itu, potongan kode ini mengimplementasikan langkah-langkah logout. Ketika parameter 'logout' terdeteksi dalam query string melalui `isset($_GET['logout'])`, sesi pengguna diakhiri menggunakan `session_destroy()`. Hal ini membersihkan data sesi dan mengembalikan pengguna ke status logout. Dengan demikian, pendekatan ini memastikan keamanan dan konsistensi informasi pengguna selama interaksi dengan aplikasi web. Manajemen sesi seperti ini sangat berguna dalam menjaga status login dan menyediakan pengalaman pengguna yang aman dan terkontrol.
