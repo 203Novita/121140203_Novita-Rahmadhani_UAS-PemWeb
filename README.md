@@ -74,3 +74,15 @@ Jawab :
 ![11](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/0599dc8c-5af8-4718-9aea-e606747adf3d)
 
 Dalam potongan kode tersebut, manajemen sesi dalam PHP diimplementasikan untuk mengelola proses login dan logout pengguna. Fungsi `session_start()` digunakan untuk memulai atau melanjutkan sesi, yang penting dalam menyimpan informasi pengguna secara konsisten di seluruh aplikasi. Ketika pengguna berhasil login melalui `$classhandle->validateUser`, informasi pengguna seperti nama pengguna disimpan dalam variabel sesi `$_SESSION['user']`. Ini memungkinkan identifikasi pengguna selama sesi berlangsung tanpa perlu mengandalkan data yang dikirim kembali dari pengguna. Selain itu, potongan kode ini mengimplementasikan langkah-langkah logout. Ketika parameter 'logout' terdeteksi dalam query string melalui `isset($_GET['logout'])`, sesi pengguna diakhiri menggunakan `session_destroy()`. Hal ini membersihkan data sesi dan mengembalikan pengguna ke status logout. Dengan demikian, pendekatan ini memastikan keamanan dan konsistensi informasi pengguna selama interaksi dengan aplikasi web. Manajemen sesi seperti ini sangat berguna dalam menjaga status login dan menyediakan pengalaman pengguna yang aman dan terkontrol.
+
+Tampilan Login
+
+![login](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/8b0ad8ff-a0e9-4432-8b09-81c99b973d7e)
+
+Tampilan Register
+
+![rejister](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/9328347f-5753-4790-9433-aa3abaec5d76)
+
+Tampilan Home
+
+![1](https://github.com/203Novita/121140203_Novita-Rahmadhani_UAS-PemWeb/assets/116406235/e4e5999e-3ba9-42f2-b835-cc4a1505c2c1)
